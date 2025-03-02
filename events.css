@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.intro {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    /* border: 3px solid red; */
+}
+
+.intro #logo {
+    position: relative;
+    height: 100px;
+    width: 250px;
+    /* border: 3px solid yellow; */
+}
+
+.intro nav {
+    position: relative;
+    height: 100px;
+    /* border: 3px solid blue; */
+    display: flex;
+}
+
+.intro nav ul {
+    position: absolute;
+    display: flex;
+    /* border: 3px solid green; */
+    /* right: 10%; */
+    right: 0;
+    margin: 20px 0;
+    background-color: var(--c11);
+    border-radius: 5px;
+}
+
+.intro nav ul li {
+    list-style: none;
+    margin: 15px 25px;
+    /* width: 70%; */
+    text-align: center;
+}
+
+.intro nav ul li a {
+    text-decoration: none;
+    color: var(--c16);
+    font-family: var(--f1);
+    font-size: 20px;
+}
+
+.intro nav ul li a:hover {
+    border-bottom: 3px solid var(--c15);
+}
+
+#active {
+    color: var(--c15);
+    border-bottom: none;
+    cursor: default;
+}
+
+#menu_nav {
+    cursor: default;
+    border-bottom: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown li .fa {
+    cursor: default;
+    position: relative;
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--c11);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    padding: 5px;
+    z-index: 1;
+    /* margin-top: 0px;
+    margin-left: 30px; */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.intro .in_intro {
+    height: 500px;
+    /* border: 3px solid orange; */
+    font-family: var(--f2);
+    background-color: var(--c15);
+    margin-top: 100px;
+}
+
+.intro .in_intro #cone {
+    height: 400px;
+    width: 600px;
+    transform: scaleX(-1);
+    float: right;
+    margin-top: 50px;
+}
+
+.intro .in_intro h3 {
+    font-size: var(--s3);
+    padding: 50px 0 50px 20px;
+    color: var(--c16);
+}
+
+.intro .in_intro h1 {
+    font-size: var(--s4);
+    padding: 0 0 0 20px;
+    color: var(--c11);
+}
+
+.intro .in_intro p {
+    font-size: var(--s5);
+    padding: 50px 0 50px 20px;
+    color: var(--c16);
+}
+
+.intro .in_intro p .fa {
+    color: var(--c11);
+}
+
+.intro .in_intro a {
+    margin: 50px 0 50px 20px;
+}
+
+.intro .in_intro a button {
+    font-size: var(--s1);
+    padding: 3px 50px;
+    color: var(--c16);
+    background-color: transparent;
+    border: 2px solid var(--c16);
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.intro .in_intro a button:hover {
+    /* color: var(--c16); */
+    background-color: var(--c11);
+}
+
+.intro .in_intro a button .fa {
+    margin-left: 10px;
+    color: var(--c16);
+}
+
+#info {
+    text-align: center;
+    font-size: var(--s8);
+    font-family: var(--f1);
+    border-bottom: 5px double var(--c16);
+    /* border: 3px solid blue; */
+    color: var(--c15);
+    /* text-decoration: underline var(--c16); */
+    width: fit-content;
+    margin: 100px auto 0;
+}
+
+.footer {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1280px;
+    width: 80%;
+    background: var(--c1);
+    border-radius: 6px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--c23);
+    margin: 200px 0 0 0;
+}
+.footer .fa {
+    color: var(--c15);
+    padding: 0 10px 0 0;
+}
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+}
+.footer-row .footer-col h4 {
+    color: var(--c16);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.footer-col .links {
+    margin-top: 20px;
+}
+.footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+.footer-col .links li a {
+    text-decoration: none;
+    color: var(--c23);
+}
+.footer-col .links li a:hover {
+    color: var(--c16);
+}
+.footer-col p {
+    margin: 20px 0;
+    color: var(--c15);
+    max-width: 300px;
+}
+.footer-col form {
+    display: flex;
+    gap: 5px;
+}
+.footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--c15);
+    caret-color: var(--c15);
+    color: var(--c16);
+    padding-left: 10px;
+}
+.footer-col input::placeholder {
+    color: var(--c23);
+}
+.footer-col form button {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+    color: var(--c16);
+    border: 1px solid var(--c15);
+}
+.footer-col form button:hover {
+    background: var(--c11);
+    color: var(--c16);
+    /* border: 1px solid var(--c15); */
+}
+.footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 15px;
+    cursor: pointer;
+}
+.footer-col .icons i {
+    color: var(--c15);
+}
+.footer-col .icons i:hover  {
+    color: var(--c16);
+}
+
+#thanks {
+    text-align: center;
+    font-size: var(--s7);
+    font-family: var(--f1);
+    border-top: 5px double var(--c16);
+    padding-top: 20px;
+    /* border: 3px solid blue; */
+    color: var(--c15);
+    width: 100%;
+    margin: -100px auto 10px;
+}
+
+#copyright {
+    text-align: center;
+    font-size: var(--s9);
+    font-family: var(--f2);
+    /* border-top: 5px double var(--c16); */
+    padding-top: 20px;
+    /* border: 3px solid blue; */
+    color: var(--c16);
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+@media screen and (max-width: 414px) {
+    .intro {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        /* border: 3px solid red; */
+    }
+    .intro #logo {
+        margin: 0 auto;
+        display: block;
+        /* border: 3px solid yellow; */
+    }
+    .intro nav {
+        height: 50px;
+        display: block;
+        /* border: 3px solid red; */
+    }
+    .intro nav ul {
+        position: relative;
+        display: block;
+        margin: 0px;
+        border-radius: 5px;
+        /* border: 3px solid green; */
+    }
+    .intro nav ul li {
+        margin: 15px 0px;
+        padding: 5px 0px;
+    }
+    .intro nav ul li a {
+        font-size: 20px;
+    }
+    #nav_hr {
+        display: none;
+    }
+    .dropdown {
+        margin: 0 auto;
+        display: block;
+    }
+    .intro .in_intro {
+        position: relative;
+        height: 550px;
+        /* border: 3px solid orange; */
+        margin-top: 360px;
+    }
+    .intro .in_intro #cone {
+        height: 150px;
+        width: 200px;
+        transform: scaleX(-1);
+        float: right;
+        margin-top: 30px;
+    }
+    .intro .in_intro h3 {
+        font-size: var(--s1);
+        padding: 30px 0 30px 20px;
+    }
+    .intro .in_intro h1 {
+        font-size: var(--s8);
+        padding: 0 0 0 20px;
+    }
+    .intro .in_intro p {
+        padding: 30px 0 30px 20px;
+        font-size: var(--s5);
+    }
+    .intro .in_intro a {
+        padding: 30px 0 30px 20px;
+    }
+    .intro .in_intro a button {
+        font-size: var(--s1);
+        padding: 3px 50px;
+        border: 2px solid var(--c16);
+        /* border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; */
+        border-radius: 5px;
+    }
+    #info {
+        text-align: center;
+        font-size: var(--s8);
+        font-family: var(--f1);
+        border-bottom: 5px double var(--c16);
+        /* border: 3px solid blue; */
+        color: var(--c15);
+        /* text-decoration: underline var(--c16); */
+        width: fit-content;
+        margin: 50px auto 0;
+    }
+    .footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        border-radius: 0;
+        margin: 50px 0 0 0;
+    }
+    .footer .footer-row {
+        padding: 20px;
+        gap: 1rem;
+    }
+    .footer-col form {
+        display: flex;
+    }
+    .footer-col form :where(input, button) {
+        margin: 10px 0 0 0;
+    }
+    .footer-col form input {
+        width: 100%;
+    }
+    .footer-col form button {
+        width: 40%;
+        margin: 10px 0 0 0;
+    }
+    #thanks {
+        font-size: var(--s1);
+        /* padding-top: 150px; */
+        /* width: 80%; */
+        margin: 50px auto 10px;
+    }
+    #copyright {
+        font-size: var(--s10);
+        padding-top: 20px;
+        /* width: 70%; */
+        margin: 0 auto 20px;
+    }
+}

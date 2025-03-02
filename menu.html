@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Ice Cream</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="intro" id="top">
+        <nav>
+            <img id="logo" src="pictures/annie_rue_logo.png">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <div class="dropdown">
+                    <li><a id="active" href="#">Menu <i class="fa fa-sort-desc" aria-hidden="true"></i></a></li>
+                    <div class="dropdown-content">
+                        <li><a href="#flavours">Flavours</a></li>
+                        <li><a href="#cup">Cup</a></li>
+                        <li><a href="#cornet">Cornet</a></li>
+                        <li><a href="#cone">Cone</a></li>
+                        <li><a href="#stick">Stick</a></li>
+                        <li><a href="#split">Split</a></li>
+                        <li><a href="#mix_up">Mix Up</a></li>
+                    </div>
+                </div>
+                <li><a href="events.html#events">Events</a></li>
+                <li><a href="index.html#view">View</a></li><hr id="nav_hr">
+                <li><a href="#info">Info</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="menu" id="menu">
+        <h3 id="header">Menu</h3>
+        <div class="cats">
+            <div class="cat">
+                    <img src="pictures/feature-cottage-cheese-ice-cream-735x961.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                    <h2>Ice Cream 1</h2>
+                    <p><i class="fa fa-angle-right" aria-hidden="true"></i> 8 Flavours <br><i class="fa fa-angle-right" aria-hidden="true"></i> Whipped Cream <br><i class="fa fa-angle-right" aria-hidden="true"></i> Chocolate Syrup <br><i class="fa fa-angle-right" aria-hidden="true"></i> Grenadine Syrup</p>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </span>
+                    <h2 id="price">5 $</h2>
+            </div><hr id="cat_hr">
+            <div class="cat">
+                    <img src="pictures/homemade-chocolate-ice-cream-recipe-7.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    <h2>Ice Cream 2</h2>
+                    <p><i class="fa fa-angle-right" aria-hidden="true"></i> 8 Flavours <br><i class="fa fa-angle-right" aria-hidden="true"></i> Whipped Cream <br><i class="fa fa-angle-right" aria-hidden="true"></i> Chocolate Syrup <br><i class="fa fa-angle-right" aria-hidden="true"></i> Grenadine Syrup</p>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </span>
+                    <h2 id="price">5 $</h2>
+            </div><hr id="cat_hr">
+            <div class="cat">
+                    <img src="pictures/Ice_cream_with_whipped_cream,_chocolate_syrup,_and_a_wafer_(cropped).jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    <h2>Ice Cream 3</h2>
+                    <p><i class="fa fa-angle-right" aria-hidden="true"></i> 8 Flavours <br><i class="fa fa-angle-right" aria-hidden="true"></i> Whipped Cream <br><i class="fa fa-angle-right" aria-hidden="true"></i> Chocolate Syrup <br><i class="fa fa-angle-right" aria-hidden="true"></i> Grenadine Syrup</p>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
+                    <h2 id="price">5 $</h2>
+            </div>
+            <div class="cat">
+                    <img src="pictures/istockphoto-529478371-612x612.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                    <h2>Ice Cream 4</h2>
+                    <p><i class="fa fa-angle-right" aria-hidden="true"></i> 8 Flavours <br><i class="fa fa-angle-right" aria-hidden="true"></i> Whipped Cream <br><i class="fa fa-angle-right" aria-hidden="true"></i> Chocolate Syrup <br><i class="fa fa-angle-right" aria-hidden="true"></i> Grenadine Syrup</p>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
+                    <h2 id="price">5 $</h2>
+            </div><hr id="cat_hr">
+            <div class="cat">
+                    <img src="pictures/istockphoto-669051090-612x612.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                    <h2>Ice Cream 5</h2>
+                    <p><i class="fa fa-angle-right" aria-hidden="true"></i> 8 Flavours <br><i class="fa fa-angle-right" aria-hidden="true"></i> Whipped Cream <br><i class="fa fa-angle-right" aria-hidden="true"></i> Chocolate Syrup <br><i class="fa fa-angle-right" aria-hidden="true"></i> Grenadine Syrup</p>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
+                    <h2 id="price">5 $</h2>
+            </div><hr id="cat_hr">
+
+        </div>
+    </div>
+
+    <div class="menu" id="flavours">
+        <h3 id="header">Flavours</h3>
+        <div class="cats">
+            <div class="cat">
+                    <img src="pictures/strawberry.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                    <h2>Strawberry</h2>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </span>
+            </div><hr id="cat_hr">
+            <div class="cat">
+                    <img src="pictures/kiwi.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                    <h2>Kiwi</h2>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </span>
+            </div><hr id="cat_hr">
+            <div class="cat">
+                    <img src="pictures/oreo.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                    <h2>Oreo</h2>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
+            </div>
+            <div class="cat">
+                    <img src="pictures/chocolate.jpeg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                    <h2>Chocolate</h2>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
+            </div><hr id="cat_hr">
+            <div class="cat">
+                    <img src="pictures/ashta.jpeg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                    <h2>Ashta</h2>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
+            </div><hr id="cat_hr">
+
+        </div>
+    </div>
+
+    <h3 id="info">Info</h3>
+    <section class="footer" id="footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4><i class="fa fa-address-book" aria-hidden="true"></i> Contact Us</h4>
+            <ul class="links">
+                <li><i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:+96176134251">76 134 251</a>
+                </li>
+                <!-- <li><a href="#">Compressions</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Collection</a></li> -->
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><i class="fa fa-address-card" aria-hidden="true"></i> Address</h4>
+            <ul class="links">
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Lebanon, Nabatieh.. </li>
+                <li><i class="fa fa-link" aria-hidden="true"></i>
+                    <a href="https://www.maps.google.com/"> Location</a></li>
+                <li><i class="fa fa-map" aria-hidden="true"></i> Bla Bla Street</li>
+                <!-- <li><a href="#">Popular Designs</a></li>
+                <li><a href="#">Art Skills</a></li>
+                <li><a href="#">New Uploads</a></li> class="fa fa-link" imam sader street -->
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><i class="fa fa-clock-o" aria-hidden="true"></i> Open Days | Hours</h4>
+            <ul class="links">
+                <li><i class="fa fa-check" aria-hidden="true"></i> Monday | 8 AM - 10 PM</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Tuesday | 8 AM - 10 PM</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Wednesday | 8 AM - 10 PM</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Thursday | 8 AM - 10 PM</li>
+                <li><i class="fa fa-times" aria-hidden="true"></i> Friday | Closed</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Saturday | 8 AM - 10 PM</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Sunday | 8 AM - 10 PM</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><i class="fa fa-list-ul" aria-hidden="true"></i> About Us</h4>
+            <p>
+              <!-- Subscribe to our newsletter for a weekly dose
+              of news, updates, helpful tips, and
+              exclusive offers. -->
+              We are the scoop masters, crafting frozen delights 
+              that make taste buds dance with joy. Indulge in our creamy 
+              creations and let your sweet tooth lead the way. 
+            </p>
+            <form action="#top">
+              <input type="text" placeholder="Your Favorite Meal" title="Write Your Favorite Meal (Optional)" required>
+              <button type="submit">Submit</button>
+            </form>
+            <div class="icons">
+                <a href="https://www.facebook.com/">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com/">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://www.google.com/">
+                    <i class="fa fa-google"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <h3 id="thanks">Thanks For Being Here! <br>We Appreciate Your Visit..</h3>
+    <h3 id="copyright">Designed & Developed By "Samer Trh" <br><i class="fa fa-copyright" aria-hidden="true"></i> 2024 | All Rights Reserved</h3>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 10</div>
+            <img src="pictures/feature-cottage-cheese-ice-cream-735x961.jpeg">
+              <div class="caption-container">
+                  <p id="caption">Ice Cream 1</p>
+                </div>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 10</div>
+            <img src="pictures/homemade-chocolate-ice-cream-recipe-7.jpeg">
+            <div class="caption-container">
+                  <p id="caption">Ice Cream 2</p>
+                </div>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 10</div>
+            <img src="pictures/Ice_cream_with_whipped_cream,_chocolate_syrup,_and_a_wafer_(cropped).jpeg">
+            <div class="caption-container">
+                  <p id="caption">Ice Cream 3</p>
+                </div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 10</div>
+            <img src="pictures/istockphoto-529478371-612x612.jpeg">
+            <div class="caption-container">
+                  <p id="caption">Ice Cream 4</p>
+                </div>
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">5 / 10</div>
+            <img src="pictures/istockphoto-669051090-612x612.jpeg">
+            <div class="caption-container">
+                  <p id="caption">Ice Cream 5</p>
+                </div>
+          </div>
+
+
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 10</div>
+            <img src="pictures/strawberry.jpeg">
+              <div class="caption-container">
+                  <p id="caption">Strawberry</p>
+                </div>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">7 / 10</div>
+            <img src="pictures/kiwi.jpeg">
+            <div class="caption-container">
+                  <p id="caption">Kiwi</p>
+                </div>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">8 / 10</div>
+            <img src="pictures/oreo.jpeg">
+            <div class="caption-container">
+                  <p id="caption">Oreo</p>
+                </div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">9 / 10</div>
+            <img src="pictures/chocolate.jpeg">
+            <div class="caption-container">
+                  <p id="caption">Chocolate</p>
+                </div>
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">10 / 10</div>
+            <img src="pictures/ashta.jpeg">
+            <div class="caption-container">
+                  <p id="caption">Ashta</p>
+                </div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    </div>
+
+    
+
+    <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+
+
+</body>
+</html>
